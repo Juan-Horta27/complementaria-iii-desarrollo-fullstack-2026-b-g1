@@ -1,0 +1,7 @@
+target/
+.idea/
+.vscode/
+*.iml
+
+# Archivos de la base de datos H2
+data/
