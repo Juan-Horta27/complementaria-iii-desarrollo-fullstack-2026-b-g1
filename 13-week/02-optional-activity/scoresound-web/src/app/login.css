@@ -1,0 +1,33 @@
+.tarjeta {
+  width: 320px;
+  margin: 12vh auto 0;
+  padding: 28px;
+  background: #1c1c28;
+  border: 1px solid #2e2e40;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+h1 { margin: 0; font-size: 1.6rem; }
+.sub { margin: 0; color: #9a9ab0; }
+label { display: flex; flex-direction: column; gap: 6px; font-size: 0.9rem; }
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #3a3a52;
+  background: #12121a;
+  color: inherit;
+  font-size: 1rem;
+}
+button {
+  padding: 11px;
+  border: 0;
+  border-radius: 8px;
+  background: #7c5cff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: wait; }
+.error { margin: 0; color: #ff7b7b; font-size: 0.9rem; }

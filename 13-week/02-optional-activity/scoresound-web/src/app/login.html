@@ -1,0 +1,22 @@
+<form class="tarjeta" (ngSubmit)="entrar()">
+  <h1>ScoreSound</h1>
+  <p class="sub">Inicia sesión</p>
+
+  <label>
+    Usuario
+    <input name="usuario" [(ngModel)]="usuario" autocomplete="username" required />
+  </label>
+
+  <label>
+    Clave
+    <input name="clave" type="password" [(ngModel)]="clave" autocomplete="current-password" required />
+  </label>
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  <button type="submit" [disabled]="cargando()">
+    {{ cargando() ? 'Entrando...' : 'Entrar' }}
+  </button>
+</form>
